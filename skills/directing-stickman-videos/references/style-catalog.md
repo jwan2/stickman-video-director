@@ -57,22 +57,17 @@ Occasional simple line expressions are allowed by default. Before freezing eithe
 
 ### Character DNA Anchors (Anti-Deformation Lock)
 
-To prevent character drift, bug-eye deformations, or clothing loss across clips, use these exact character anchors:
+To reduce character drift and clothing loss, repeat this complete default anchor in every standalone source prompt. If the user approved a different outfit or cast, freeze and repeat its full approved anchor instead. Consistency must still be checked in actual results:
 
-**Clip 1 Character Anchor:**
+**Default Character Anchor (every source clip):**
 ```text
-A minimalist 2D animated stick figure wearing a bright red beanie (smooth rounded knit, no pom-pom) and a yellow t-shirt, with simple black stick limbs and shorts. Simple black lines, vibrant colors, smooth 2D animation style.
-```
-
-**Subsequent Clips Character Anchor (Clips 2–6):**
-```text
-The same minimalist 2D animated stick figure in a bright red beanie and yellow shirt... Simple black lines, vibrant colors, smooth 2D animation style.
+A minimalist 2D animated stick figure wearing a bright red beanie (smooth knit, no pom-pom) and a yellow t-shirt, with simple black stick limbs and shorts. Simple black lines, vibrant colors, smooth 2D animation style.
 ```
 
 **Deformation Prevention Rules:**
 - **No Realistic Facial Features**: Hollow circular head or minimal dot eyes only. Never request detailed pupils, irises, or photorealistic facial contours (which trigger alien bug-eyes).
 - **No Pom-Poms**: Specify smooth rounded beanie top to prevent erratic pom-poms or winter tassels.
-- **Always Include Both Beanie and T-shirt**: Omitting the shirt results in naked stick bodies; omitting the beanie results in standard Style 1 characters.
+- **Preserve the approved wardrobe**: For the default cast keep both beanie and t-shirt. When the user selects another costume, describe and repeat that approved costume instead.
 
 ---
 
@@ -99,7 +94,7 @@ Negative constraints: strictly minimalist studio aesthetic, no circuit board tex
   - Pulling out a glowing light-pen to draw a crisp luminous line bridge across an abyss.
   - Touching a sleek floating glass panel to reveal an icon-only illuminated lock.
   - Pushing open a heavy minimalist vault door to step forward into bright horizon light.
-- **Pacing**: Every 10-second clip must feature distinct actions across `[0–3s]`, `[3–7s]`, and `[7–10s]`. Never let the character stand idle or stare at the camera for multiple seconds.
+- **Pacing**: Select legible physical actions, reactions and useful holds according to the story and the editable interval. Do not force a three-beat schedule or movement merely to fill a ten-second source.
 
 ---
 
@@ -113,7 +108,7 @@ in a rich full-color cinematic environment [describe setting: e.g., a dimly lit 
 ```
 
 #### Character & Style Consistency
-- The character remains the same minimalist 2D stick figure in red beanie and yellow shirt.
+- The character retains the approved minimalist 2D stick-figure design and wardrobe; the default is a red beanie and yellow shirt.
 - Maintain smooth 2D vector animation aesthetics for the character even within a textured, atmospheric background.
 
 #### Negative Constraints
@@ -127,7 +122,7 @@ Negative constraints: no photorealistic human skin or faces, no 3D humanoid CGI 
 
 Minimalist expressive characters inside colorful cartoon worlds: an office, a metro platform, a street-side cafe, a park or another story-appropriate setting. Use close action inserts, wide establishing views, lateral tracking and motivated location cuts. Warmth belongs to the visual treatment; preserve the source's conflict and meaning rather than making every topic cheerful.
 
-Each new ten-second segment normally establishes a different location. Keep the character, important props, screen direction and full voice profile consistent, while deliberately changing scenery. A new camera angle on the same desk is not a substitute for a new story location. Single-location requests and approved callbacks remain valid exceptions.
+Choose a new location when the story benefits from it; a single location, varied views and deliberate returns are equally valid. Keep character, important props, screen direction and the full voice profile consistent across cuts. Ten-second source boundaries do not themselves require a location change.
 
 Use the full character anchor, prop-state rules and acceptance checklist in `cozy-storytelling.md`; do not inherit Style 1's hollow-head/no-face/no-filled-body bans or Style 3's crude sketch/animal-hide rules.
 
@@ -143,15 +138,17 @@ Use `historical-cartoon.md` for the full style anchor, era-pack template, cast c
 
 ## 6. Universal Audio Continuity Contract
 
-Voice continuity is a shared foundation for **all styles**, including Styles 3 and 4. Apply `voice-continuity.md` before style-specific music rules. Different videos can choose different voices, while all clips of one video repeat one complete approved voice profile. Keep voice identity separate from the musical arc.
+Voice continuity is a shared foundation for **all A1–A5 styles**, including Styles 3–5. Apply `voice-continuity.md` before style-specific music rules. Different videos can choose different voices. Repeat one complete approved voice profile in each prompt that generates narration; for independent narration, preserve the approved provider, voice and recording in the edit plan rather than visual-only prompts. Keep voice identity separate from the musical arc.
 
 ### Narrator Voice Lock
 ```text
 One off-screen adult male narrator throughout. General American accent, warm clean baritone, medium-low pitch, gentle chest resonance, no raspiness or breathiness. Calm conversational delivery, restrained pitch variation, steady speaking pace, and close, dry studio sound. Keep the same vocal timbre, register, accent, pace, and recording quality throughout. Emotional progression belongs to the visuals and music; do not change the narrator's voice or switch to character dialogue.
 ```
-This is the user-accepted male example, not a compulsory voice for every project. For female, older, youthful or other approved voices, resolve a complete coherent profile using `voice-continuity.md`, then repeat it verbatim across every clip. Do not use only "same narrator" or inherit a prior clip by name. Keep narration audio-only, voice-first, with no speech bubbles or dialogue boxes. Actual listening acceptance exists for the Style 2A Hope sample; other profiles/styles remain untested for audio matching.
+This is the user-accepted male example, not a compulsory voice for every project. For female, older, youthful or other approved voices, resolve a complete coherent profile using `voice-continuity.md`, then repeat it verbatim for each clip that generates narration. When narration is independent, preserve the approved voice and recording without inserting voice instructions in visual-only prompts. Keep narration audio-only, voice-first, with no speech bubbles or dialogue boxes. Actual listening acceptance exists for the Style 2A Hope sample; other profiles/styles remain untested for audio matching.
 
 ### BGM Continuity Lock
+
+The following piano/synth block is a historical example, not a mandatory score for all styles. Use the approved story-appropriate motif and preserve its continuity.
 - **Clip 1**:
   ```text
   Audio: Voiceover clearly audible over quiet, thoughtful piano and subtle soft ambient synth, building gentle optimistic momentum.
@@ -163,13 +160,8 @@ This is the user-accepted male example, not a compulsory voice for every project
 
 ---
 
-## 7. Visual Beat Pacing Template (10-Second Clip)
+## 7. Story-led visual pacing
 
-Every prompt must divide its 10 seconds into three active narrative beats:
+Use [story-led directing](directing-craft.md) to choose the narrative job, primary action or reaction, appropriate visual timing and usable source range. The default Flow Omni 1.2 Flash source is ten seconds; the edited shot may be shorter. Preserve meaningful pauses, planned cuts and the user's requested film duration.
 
-```text
-Timed Synchronized Visual Beats:
-- [0–3s] (VO: "..."): [Setup / premise action — character enters, acts, or inherits momentum from previous clip]
-- [3–7s] (VO: "..."): [Escalation / discovery — character interacts with environment or solves visual obstacle]
-- [7–10s] (VO: "..."): [Climax & outgoing transition — character delivers payoff and initiates outgoing motion for next clip]
-```
+Plan a clear start state, legible change or purposeful reaction, and an outgoing state. Use whatever number of story beats is appropriate instead of a fixed three-part timing or a mandatory number of visual devices.

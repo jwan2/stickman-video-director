@@ -4,7 +4,7 @@
 
 Expressive minimalist characters in full-color 2D cartoon story environments. White filled round heads and slim white torsos contrast with dark stick limbs; the background carries color, atmosphere, gentle light and depth. Use clear cartoon contours and cinematic framing, not crude hand drawing, sketchbook borders, paper overlays or photorealistic/3D human characters. Do not inherit Style 1's hollow-head/no-face/no-filled-body bans or Style 3's animal-hide/cave defaults.
 
-“Cozy” describes visual warmth, not a requirement that every script be cheerful. Preserve the user's meaning and the hook → conflict → insight → callback progression. Anxiety, science, education and serious life topics can use the same style. Settings and colors follow the topic, not a mandatory cafe, smartphone or pastel palette.
+“Cozy” describes visual warmth, not a requirement that every script be cheerful or follow a fixed narrative formula. Preserve the user's meaning and choose story-led tension, development and ending using [directing craft](directing-craft.md). Anxiety, science, education and serious life topics can use the same style. Settings and colors follow the topic, not a mandatory cafe, smartphone or pastel palette.
 
 ## Character design belongs to the story
 
@@ -18,9 +18,9 @@ One minimalist 2D cartoon protagonist with a white filled circular head, two sma
 
 Keep action, camera scale and props outside this design block. A close-up enlarges the entire character in the image; compare proportions, not raw pixel head size. Do not force covered limbs to show through tables, bedding or foreground objects. Temporary occlusion is not permission to add a replacement arm. Effects stay on props or detached graphics, not duplicated limb trails.
 
-## New segment, new story setting
+## Story-specific settings and cuts
 
-For a multi-clip video, default each new ten-second segment to another recognizable main setting. Establish it immediately, then vary wide views, action close-ups, tracking and foreground passes inside the segment. Three clips at the same table with different zoom levels do not satisfy this default.
+Choose recognizable settings and vary wide views, action close-ups, reactions or tracking when they serve the story. An editorial scene may remain in one place across multiple source generations; the ten-second source boundary is not a required location change. A new setting, return or time jump should have a narrative purpose.
 
 Possible story route: office interruption → commute pressure → outdoor break. This is an example, not a reusable compulsory plot. Re-block for 9:16 with vertical depth and reveals instead of reusing a horizontal layout. Respect an explicit single-location request or an approved return/callback.
 
@@ -43,9 +43,9 @@ Graphical alerts or metaphors belong only to their approved timed beats. Use sim
 
 ## Motion and audio
 
-Use concrete actions, related effects and purposeful shot changes about every two to three seconds, with enough time to complete each handoff. Avoid liquid furniture transformations and too many simultaneous actions. A short sip, hesitation or reaction is useful; do not make the entire clip an idle talking pose. Warm daylight, moving leaves, passing trains and location-specific details can enrich the image without redesigning the character.
+Use concrete actions, related effects and purposeful shot changes as the story and actual narration require, with enough time to complete each handoff. Avoid liquid furniture transformations, excessive simultaneous actions and automatic cuts at fixed intervals. A sip, hesitation, reaction or meaningful hold can be the point of a shot. Warm daylight, moving leaves, passing trains and location-specific details can enrich the image without redesigning the character.
 
-Apply the shared `voice-continuity.md` contract for every clip. Freeze the video's chosen full voice profile and repeat it verbatim; another place, mood, character age or scene cannot recast the narrator. Keep emotions in visuals/music, and environmental acoustics in SFX rather than changing dry narration into station/cafe reverb. Use a story-appropriate score with the same motif/tempo/instrumentation across segments. The style is not limited to one male voice.
+Apply the shared `voice-continuity.md` contract throughout. Freeze the video's chosen full voice profile and repeat it verbatim for prompts generating narration; for an independent voice track, preserve the approved voice and recording in the edit instead of inserting voice instructions into a visual-only prompt. Another place, mood, character age or scene cannot recast the narrator. Keep emotions in visuals/music, and environmental acoustics in SFX rather than changing dry narration into station/cafe reverb. Use a story-appropriate score with the same motif/tempo/instrumentation across segments. The style is not limited to one male voice.
 
 ## Delivery and acceptance
 
@@ -53,7 +53,7 @@ The skill outputs the confirmed proposal and standalone prompt package. Flow ope
 
 Before publishing a result or calling it consistent, check:
 
-- New clip openings show the approved different settings, unless a single-location request/callback was approved.
+- Each scene shows its approved setting, and any location change or return serves the story.
 - Character count/design, head/torso fill, proportions and current limb poses remain coherent at reaches, lifts, turns and walking steps.
 - Prop ownership and visible faces match the action; no simultaneous hand/background copies or end-state resets.
 - Movement direction and narrative meaning connect the cuts; time jumps are named. Different furniture after an intentional location cut is not itself a failure.

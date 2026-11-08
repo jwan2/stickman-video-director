@@ -1,8 +1,8 @@
 # Shared voice continuity — all visual styles
 
-Scope: **A · Director text-to-video prompts only**. B · Autopilot uses named TTS voices under `autopilot.md`; do not copy this document's descriptive voice profiles into any B-style TTS request.
+Scope: **A1–A5 Director narration and applicable source-generation prompts**. B · Autopilot uses named TTS voices under `autopilot.md`; do not copy this document's descriptive voice profiles into any B-style TTS request.
 
-This is the common voice contract for Style 1 Light/Dark, Style 2A, Style 2B and Style 3, plus Style 4 Cozy Storytelling. Voice identity belongs to the video, not to a visual style or a clip. Different videos may choose different voices; every clip of one video must use the same complete approved voice profile. Do not force every project into the tested male profile.
+This is the common voice contract for A1–A5, including Styles 1–5. Voice identity belongs to the video, not to a visual style or a clip. Different videos may choose different voices; preserve one complete approved voice profile per narrator within each video. Do not force every project into the tested male profile. When narration is independent, preserve the chosen provider, voice and accepted recording in the edit rather than adding narration instructions to visual-only prompts.
 
 ## Choose once in Phase A
 
@@ -12,7 +12,7 @@ For example, a male choice can become adult, General American, warm clean barito
 
 ## Freeze once in Phase B
 
-Write one self-contained English voice block from the approved profile and copy it **verbatim** into every standalone clip prompt, including clip 1. Never abbreviate it to "same narrator", "continue the voice from clip 1", an ellipsis or a speaker label alone. Independent prompts must carry their own complete voice instructions.
+When generating narration inside source clips, write one self-contained English voice block from the approved profile and copy it **verbatim** into every applicable standalone clip prompt, including clip 1. Never abbreviate it to "same narrator", "continue the voice from clip 1", an ellipsis or a speaker label alone. For independent narration, keep its exact text, timing, provider and voice in the edit plan; omit voice instructions from visual-only prompts and reuse accepted audio.
 
 The following complete male block was accepted by the user after a three-clip Flow listening comparison. Reuse it unchanged when its attributes match the approved choice:
 
@@ -32,7 +32,7 @@ For a different approved voice, compose its own complete block using the same id
 
 ## Check and retest
 
-Before delivery, compare all prompt voice blocks for exact equality (or per-speaker equality for approved dialogue). Check other prompt sentences for conflicting voice directions, confirm exact approved spoken lines, and keep speech-bubble/subtitle bans separate from the voice profile.
+Before delivery, compare applicable source-generated voice blocks for exact equality (or per-speaker equality for approved dialogue). For independent audio, verify the chosen track, provider and timing instead. Check for conflicting voice directions, confirm exact approved spoken lines, and keep speech-bubble/subtitle bans separate from the voice profile.
 
 When generation is authorized, compare the actual clips by listening: perceived speaker identity, timbre, register, accent, pace, texture and recording sound. Successful generation or screenshots do not prove audio consistency. If clips sound like different people, first inspect missing/abbreviated/contradictory voice wording. Retest a voice-only change with story, visuals, dialogue, music and generation settings held fixed; leave the baseline available for comparison. Do not dismiss a prompt problem as unavoidable model behavior before this check. Further paid retries need the user's authorization.
 

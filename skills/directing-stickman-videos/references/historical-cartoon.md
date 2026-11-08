@@ -57,22 +57,22 @@ Keep appearance separate from action: a spade's shape belongs in its prop descri
 
 Each prompt contains:
 
-1. Approved duration/ratio and technical targets. Explicitly call it a `stickman animated video`, not just an `animated video`; use the actual supported resolution rather than claiming a requested target was delivered.
+1. Flow Omni 1.2 Flash and the ten-second source-generation target, approved ratio and currently supported technical settings. Explicitly call it a `stickman animated video`, not just an `animated video`; verify the actual model, mode, duration, resolution and quote rather than claiming a requested target was delivered. The edit can use shorter intervals; preserve requested film duration and natural narration.
 2. Full drawing-style anchor, era palette and segment setting.
 3. Full cast cards for every visible recurring role, plus relevant prop designs/counts.
 4. Opening layout, held items, hand/owner and screen direction.
-5. `[0–3s]`, `[3–7s]`, `[7–10s]` physical beats, camera work and ending state.
-6. Exact approved audio-only VO and the complete frozen voice block from `voice-continuity.md`.
+5. Story-specific action or meaningful reaction, necessary timing, camera work and ending state; do not impose a fixed three-beat schedule.
+6. For source-generated narration, its exact assigned audio-only words and the complete frozen voice block from `voice-continuity.md`. For an approved independent narration track, preserve the exact provider, voice, recording and timeline in the edit plan; omit narrator instructions from visual-only prompts.
 7. Era score, timed SFX and voice-first mix; retain the same score identity across clips.
 8. Compatible negatives.
 
-Use the existing accepted male profile by default when no other voice is requested. Honor female, older, youthful or other voice choices by resolving a complete profile through `voice-continuity.md`, then freezing it across the whole video. Cast gender or a change of era never recasts the off-screen narrator. Keep voice identity separate from music and visual emotion.
+Use the existing accepted male profile by default when no other voice is requested. Honor female, older, youthful or other voice choices by resolving a complete profile through `voice-continuity.md`, then freezing it across the whole video. Reuse accepted independent narration unchanged unless the user requests a change. Cast gender or a change of era never recasts the off-screen narrator. Keep voice identity separate from music and visual emotion.
 
 Use the five-stage engine for explainers where useful; narrative shorts can use setup → escalation → payoff without forcing a discussion question. Prefer a few readable physical actions over four unrelated effects. A deliberate reaction pause is valid. Wide establishing shots, lateral tracking, medium actions and close reactions should serve the narration. Maintain screen direction and describe a planned time jump explicitly when adjacent states do not directly match.
 
 Keep one current pose per limb. Give prop transfers a clear release, travel and receiving state; do not spawn duplicate tools or transform one item into another. Use the smallest cast the story needs. Describe background groups as uniform ranks, not many competing named roles.
 
-Preserve complete approved style, cast and voice blocks; there is no style-specific character-count cap. Remove conflicting or redundant wording rather than stripping identity details. If an interface rejects the length, report its actual limit before changing approved content.
+Preserve complete approved style and cast blocks, and the applicable source-generated voice block; there is no style-specific character-count cap. Remove conflicting or redundant wording rather than stripping identity details. If an interface rejects the length, report its actual limit before changing approved content.
 
 ```text
 NO VISIBLE TEXT, LETTERS, NUMBERS, SUBTITLES, LOGOS OR WATERMARKS (blank paper or abstract brush strokes only), NO SPEECH BUBBLES, NO BLOOD OR GORE, NO PHOTOREALISTIC FACES, NO 3D CGI, NO PAPER TEXTURE, NO EXTRA LIMBS, NO FUSED OR DUPLICATE HEADS, NO COSTUME CHANGES, NO EXTRA CHARACTERS, NO INDIVIDUAL FINGERS, NO FINGER SEPARATIONS, NO WHITE HANDS OR GLOVES, NO FLOATING HEAD, NO BACKGROUND GAP BETWEEN HEAD AND NECKLINE.
@@ -84,4 +84,4 @@ Keep negatives compatible with the approved cast: do not ban expressive faces, t
 
 At the intended delivery size, check the actual continuous white jaw–short-neck–garment connection, including walking, turns, tilts and camera cuts. A background-colored gap fails even if an earlier prompt or review called the connection natural. Check neck length against the approved reference, not a long white neck or chest panel. Preserve approved head shape and proportions. The owner reference defines the target, not cross-clip stability.
 
-Before delivery, compare repeated style/cast/voice blocks and all adjacent prop states. When generation is authorized, inspect actual footage for head fill, eye design, costume silhouette, limbs, compact black mitten palms and continuous wrist attachment during walking, grips, releases and empty-hand gestures, prop counts and action joins; listen separately for narrator consistency. Check that palms have one subtle rounded thumb lobe, without separate fingers, white fill or gloves, and do not grow into large fists. Record prompt compliance separately from observed output, and state sampling coverage rather than claiming frame-by-frame certification. Earlier round-tip or exposed-neck tests do not validate this revised silhouette; retain their failures as historical observations, not overall stability passes. Localize changes to Style 5; do not rewrite Styles 1–4.
+Before delivery, compare repeated style/cast blocks, the frozen voice block in any narration-generating prompt, the approved independent track when applicable, and all adjacent prop states. When generation is authorized, inspect actual footage for head fill, eye design, costume silhouette, limbs, compact black mitten palms and continuous wrist attachment during walking, grips, releases and empty-hand gestures, prop counts and action joins; listen separately for narrator consistency. Check that palms have one subtle rounded thumb lobe, without separate fingers, white fill or gloves, and do not grow into large fists. Record prompt compliance separately from observed output, and state sampling coverage rather than claiming frame-by-frame certification. Earlier round-tip or exposed-neck tests do not validate this revised silhouette; retain their failures as historical observations, not overall stability passes. Localize changes to Style 5; do not rewrite Styles 1–4.

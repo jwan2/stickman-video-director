@@ -1,6 +1,6 @@
 # Complete Example
 
-Load this reference only when a concrete end-to-end example resolves ambiguity. Reuse its workflow and level of detail, not its topic, wording, metaphors, or palette.
+Load this reference only when a concrete end-to-end example resolves ambiguity. These are historical illustrations, not the current production contract: their fixed 0–3/3–7/7–10 pacing, source counts, model labels, voice setup and any visible wording do not override the current [storyboard](storyboard-template.md), [prompt contract](omni-flash-prompt-contract.md) or [directing craft](directing-craft.md). Reuse only relevant clarity and level of detail, not their topic, wording, metaphors, palette or fixed timing.
 
 All examples follow the shared `voice-continuity.md` contract. Freeze one complete profile per video; different examples may choose different voices. The male block has user listening acceptance for the separate Style 2A Hope test; the female profile below is an illustrative adaptation, not a provider-tested voice. Visual examples are unchanged by this voice-only update.
 
